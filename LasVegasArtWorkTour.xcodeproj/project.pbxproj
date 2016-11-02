@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D1A29DF1DC66C9300295B91 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A29DE1DC66C9300295B91 /* DataService.swift */; };
+		3D1A29E11DC6702F00295B91 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A29E01DC6702F00295B91 /* Artwork.swift */; };
+		3D1A29E31DC672F100295B91 /* ArtworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A29E21DC672F100295B91 /* ArtworkVC.swift */; };
+		3DB63EBA1DC66BD5004FB84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB63EB91DC66BD5004FB84B /* AppDelegate.swift */; };
+		3DB63EBC1DC66BD5004FB84B /* DownloadDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB63EBB1DC66BD5004FB84B /* DownloadDataVC.swift */; };
+		3DB63EBF1DC66BD5004FB84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EBD1DC66BD5004FB84B /* Main.storyboard */; };
+		3DB63EC11DC66BD5004FB84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EC01DC66BD5004FB84B /* Assets.xcassets */; };
+		3DB63EC41DC66BD5004FB84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */; };
+		A57F67C6D765BAEE6695C5EC /* Pods_LasVegasArtWorkTour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		23147618204689B0D214FD35 /* Pods-LasVegasArtWorkTour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LasVegasArtWorkTour.release.xcconfig"; path = "Pods/Target Support Files/Pods-LasVegasArtWorkTour/Pods-LasVegasArtWorkTour.release.xcconfig"; sourceTree = "<group>"; };
+		3D1A29DE1DC66C9300295B91 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		3D1A29E01DC6702F00295B91 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		3D1A29E21DC672F100295B91 /* ArtworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkVC.swift; sourceTree = "<group>"; };
+		3DB63EB61DC66BD4004FB84B /* LasVegasArtWorkTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LasVegasArtWorkTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DB63EB91DC66BD5004FB84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DB63EBB1DC66BD5004FB84B /* DownloadDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDataVC.swift; sourceTree = "<group>"; };
+		3DB63EBE1DC66BD5004FB84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DB63EC01DC66BD5004FB84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DB63EC31DC66BD5004FB84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DB63EC51DC66BD5004FB84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		977C5007916D1AE5284CF80F /* Pods-LasVegasArtWorkTour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LasVegasArtWorkTour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LasVegasArtWorkTour/Pods-LasVegasArtWorkTour.debug.xcconfig"; sourceTree = "<group>"; };
+		B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LasVegasArtWorkTour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB63EB31DC66BD4004FB84B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A57F67C6D765BAEE6695C5EC /* Pods_LasVegasArtWorkTour.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DB63EAD1DC66BD4004FB84B = {
+			isa = PBXGroup;
+			children = (
+				3DB63EB81DC66BD4004FB84B /* LasVegasArtWorkTour */,
+				3DB63EB71DC66BD4004FB84B /* Products */,
+				57CECDC5E2C3B0E7DBD4BAEE /* Pods */,
+				694A95351A67BAA3962EC660 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DB63EB71DC66BD4004FB84B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DB63EB61DC66BD4004FB84B /* LasVegasArtWorkTour.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DB63EB81DC66BD4004FB84B /* LasVegasArtWorkTour */ = {
+			isa = PBXGroup;
+			children = (
+				3DB63EB91DC66BD5004FB84B /* AppDelegate.swift */,
+				3DB63EBB1DC66BD5004FB84B /* DownloadDataVC.swift */,
+				3D1A29E21DC672F100295B91 /* ArtworkVC.swift */,
+				3D1A29E01DC6702F00295B91 /* Artwork.swift */,
+				3D1A29DE1DC66C9300295B91 /* DataService.swift */,
+				3DB63EBD1DC66BD5004FB84B /* Main.storyboard */,
+				3DB63EC01DC66BD5004FB84B /* Assets.xcassets */,
+				3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */,
+				3DB63EC51DC66BD5004FB84B /* Info.plist */,
+			);
+			path = LasVegasArtWorkTour;
+			sourceTree = "<group>";
+		};
+		57CECDC5E2C3B0E7DBD4BAEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				977C5007916D1AE5284CF80F /* Pods-LasVegasArtWorkTour.debug.xcconfig */,
+				23147618204689B0D214FD35 /* Pods-LasVegasArtWorkTour.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		694A95351A67BAA3962EC660 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB63EB51DC66BD4004FB84B /* LasVegasArtWorkTour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB63EC81DC66BD5004FB84B /* Build configuration list for PBXNativeTarget "LasVegasArtWorkTour" */;
+			buildPhases = (
+				337287A46BDD51766C7CDFAC /* [CP] Check Pods Manifest.lock */,
+				3DB63EB21DC66BD4004FB84B /* Sources */,
+				3DB63EB31DC66BD4004FB84B /* Frameworks */,
+				3DB63EB41DC66BD4004FB84B /* Resources */,
+				343F6C861E1BF2FDED869F12 /* [CP] Embed Pods Frameworks */,
+				249DA4F9BE3475253E42F02F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LasVegasArtWorkTour;
+			productName = LasVegasArtWorkTour;
+			productReference = 3DB63EB61DC66BD4004FB84B /* LasVegasArtWorkTour.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DB63EAE1DC66BD4004FB84B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ROKIBI;
+				TargetAttributes = {
+					3DB63EB51DC66BD4004FB84B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 3DB63EB11DC66BD4004FB84B /* Build configuration list for PBXProject "LasVegasArtWorkTour" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DB63EAD1DC66BD4004FB84B;
+			productRefGroup = 3DB63EB71DC66BD4004FB84B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DB63EB51DC66BD4004FB84B /* LasVegasArtWorkTour */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB63EB41DC66BD4004FB84B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DB63EC41DC66BD5004FB84B /* LaunchScreen.storyboard in Resources */,
+				3DB63EC11DC66BD5004FB84B /* Assets.xcassets in Resources */,
+				3DB63EBF1DC66BD5004FB84B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		249DA4F9BE3475253E42F02F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LasVegasArtWorkTour/Pods-LasVegasArtWorkTour-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		337287A46BDD51766C7CDFAC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		343F6C861E1BF2FDED869F12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LasVegasArtWorkTour/Pods-LasVegasArtWorkTour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB63EB21DC66BD4004FB84B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1A29DF1DC66C9300295B91 /* DataService.swift in Sources */,
+				3D1A29E31DC672F100295B91 /* ArtworkVC.swift in Sources */,
+				3DB63EBC1DC66BD5004FB84B /* DownloadDataVC.swift in Sources */,
+				3D1A29E11DC6702F00295B91 /* Artwork.swift in Sources */,
+				3DB63EBA1DC66BD5004FB84B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DB63EBD1DC66BD5004FB84B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB63EBE1DC66BD5004FB84B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DB63EC31DC66BD5004FB84B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB63EC61DC66BD5004FB84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DB63EC71DC66BD5004FB84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DB63EC91DC66BD5004FB84B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 977C5007916D1AE5284CF80F /* Pods-LasVegasArtWorkTour.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LasVegasArtWorkTour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.ROKUBI.LasVegasArtWorkTour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DB63ECA1DC66BD5004FB84B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23147618204689B0D214FD35 /* Pods-LasVegasArtWorkTour.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LasVegasArtWorkTour/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = info.ROKUBI.LasVegasArtWorkTour;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB63EB11DC66BD4004FB84B /* Build configuration list for PBXProject "LasVegasArtWorkTour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB63EC61DC66BD5004FB84B /* Debug */,
+				3DB63EC71DC66BD5004FB84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DB63EC81DC66BD5004FB84B /* Build configuration list for PBXNativeTarget "LasVegasArtWorkTour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB63EC91DC66BD5004FB84B /* Debug */,
+				3DB63ECA1DC66BD5004FB84B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DB63EAE1DC66BD4004FB84B /* Project object */;
+}
