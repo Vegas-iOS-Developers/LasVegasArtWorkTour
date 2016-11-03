@@ -23,7 +23,7 @@ class DownloadDataVC: UIViewController {
         callDataService()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         print("TestVC.viewWillAppear()")
         
@@ -85,12 +85,12 @@ class DownloadDataVC: UIViewController {
 //        performSegueWithIdentifier("ShowArtworkMap", sender: self.artworks)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("TestVC.prepareForSegue()")
         
         if (segue.identifier == "ShowArtworkMap") {
             print("TestVC.prepareForSegue(): segue.identifier == \"ShowMap\"")
-            let artworkScreen = segue.destinationViewController as! ArtworkVC
+            let artworkScreen = segue.destination as! ArtworkVC
             
                 print("TestVC.prepareForSegue(): artworkScreen = segue.destinationViewController as? ArtWorkVC")
                 if let artData = sender as? [ArtWork] {
