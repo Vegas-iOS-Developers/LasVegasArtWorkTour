@@ -3,6 +3,6 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'LasVegasArtWorkTour' do
-    pod 'Alamofire', '~> 3.4'
-    pod 'SwiftyJSON', '~> 2.3'
+    pod 'Alamofire', '~> 4.0'
+    pod 'SwiftyJSON', '~> 3.1'
 end
