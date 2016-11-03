@@ -23,7 +23,7 @@ class ArtworkVC: UIViewController {
         callDataService()
     }
     
-    override func viewWillAppear(animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         print("TestVC.viewWillAppear()")
         
@@ -76,10 +76,10 @@ class ArtworkVC: UIViewController {
         }
         
         print("self.artworks.count: \(self.artworks.count)")
-        performSegueWithIdentifier("ShowArtworkMap", sender: self.artworks)
+        performSegue(withIdentifier: "ShowArtworkMap", sender: self.artworks)
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         print("TestVC.prepareForSegue()")
         
