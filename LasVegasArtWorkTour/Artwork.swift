@@ -9,7 +9,7 @@
 import MapKit
 import UIKit
 
-class ArtWork: NSObject, MKAnnotation {
+class Artwork: NSObject, MKAnnotation {
     
     private var _coordinate: CLLocationCoordinate2D
     private var _name: String

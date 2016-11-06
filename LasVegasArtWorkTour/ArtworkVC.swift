@@ -13,7 +13,7 @@ import Alamofire
 
 class ArtworkVC: UIViewController {
     
-    var artworks: [ArtWork]! = [ArtWork]()
+    var artworks: [Artwork]! = [Artwork]()
     var dataservice: DataService!
     
     override func viewDidLoad() {
@@ -70,7 +70,7 @@ class ArtworkVC: UIViewController {
             let lon = (artGeoLocLon as NSString).doubleValue
             let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
             
-            let art = ArtWork(name: artName, desc: artDesc, picURL: artURL, artist: artArtist, type: artType, coordinate: coordinate)
+            let art = Artwork(name: artName, desc: artDesc, picURL: artURL, artist: artArtist, type: artType, coordinate: coordinate)
             
             self.artworks.append(art)
         }
@@ -87,12 +87,12 @@ class ArtworkVC: UIViewController {
 //            print("TestVC.prepareForSegue(): segue.identifier == \"ShowMap\"")
 //            if let artworkScreen = segue.destination as? ArtWorkVC {
 //                print("TestVC.prepareForSegue(): artworkScreen = segue.destinationViewController as? ArtWorkVC")
-//                if let artData = sender as? [ArtWork] {
+//                if let artData = sender as? [Artwork] {
 //                    print("artData.count: \(artData.count)")
 //                    print("artData[0]: \(artData[0])")
 //                    print("artData[0].name: \(artData[0].name)")
 //                    artworkScreen.artworks = artData
-//                    print("TestVC.prepareForSegue(): artData = sender as? [ArtWork]")
+//                    print("TestVC.prepareForSegue(): artData = sender as? [Artwork]")
 //                }
 //            }
 //        }
