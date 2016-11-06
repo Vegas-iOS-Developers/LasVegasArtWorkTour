@@ -70,7 +70,7 @@ class ArtworkVC: UIViewController {
             let lon = (artGeoLocLon as NSString).doubleValue
             let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
             
-            let art = ArtWork(name: artName, desc: artDesc, picURL: artURL, latitude: artGeoLocLat, longitude: artGeoLocLon, artist: artArtist, type: artType, coordinate: coordinate)
+            let art = ArtWork(name: artName, desc: artDesc, picURL: artURL, artist: artArtist, type: artType, coordinate: coordinate)
             
             self.artworks.append(art)
         }
