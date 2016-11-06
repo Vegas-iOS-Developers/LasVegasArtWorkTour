@@ -30,29 +30,27 @@ class DataService {
         print("DataService.init()")
     }
     
-    func downloadDetails(completed: DownloadComplete) {
+    func downloadDetails(_ completed: @escaping DownloadComplete) {
         print("DataService.downloadDetails()")
         
-        Alamofire.request(.GET, self.url, parameters: nil)
+        
+        Alamofire.request(self.url, parameters: nil)
             .responseString { (response) in
+                print("Response: \(response.result)")
                 
                 switch response.result {
-                case .Success:
-                    if let data = response.data {
-                        //let newStr = String(data: data, encoding: String.Encoding.utf8)
-                        //print("data: \(data)")
-                        print("************************")
-                        let newStr = String(data: data, encoding: NSUTF8StringEncoding)
-                        self._response = newStr
-                        //print("self._response: \(self._response)")
-                        
-                        completed()
-                    }
+                    case .success:
+                        if let data = response.data {
+                            let newStr = String(data: data, encoding: String.Encoding.utf8)
+                            print("************************")
+                            self._response = newStr
+                            completed()
+
+                        }
                     
-                case .Failure(let error):
-                    print(error)
+                    case .failure(let error):
+                        print(error)
                 }
-             
         }
         
     }
