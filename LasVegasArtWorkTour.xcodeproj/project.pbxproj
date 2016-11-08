@@ -16,6 +16,7 @@
 		3DB63EC11DC66BD5004FB84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EC01DC66BD5004FB84B /* Assets.xcassets */; };
 		3DB63EC41DC66BD5004FB84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */; };
 		A57F67C6D765BAEE6695C5EC /* Pods_LasVegasArtWorkTour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */; };
+		CD94BC611DD15E41006BB26E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94BC601DD15E41006BB26E /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		3DB63EC51DC66BD5004FB84B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		977C5007916D1AE5284CF80F /* Pods-LasVegasArtWorkTour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LasVegasArtWorkTour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LasVegasArtWorkTour/Pods-LasVegasArtWorkTour.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LasVegasArtWorkTour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD94BC601DD15E41006BB26E /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				3D1A29E21DC672F100295B91 /* ArtworkVC.swift */,
 				3D1A29E01DC6702F00295B91 /* Artwork.swift */,
 				3D1A29DE1DC66C9300295B91 /* DataService.swift */,
+				CD94BC601DD15E41006BB26E /* LocationService.swift */,
 				3DB63EBD1DC66BD5004FB84B /* Main.storyboard */,
 				3DB63EC01DC66BD5004FB84B /* Assets.xcassets */,
 				3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */,
@@ -224,6 +227,7 @@
 				3D1A29E31DC672F100295B91 /* ArtworkVC.swift in Sources */,
 				3DB63EBC1DC66BD5004FB84B /* DownloadDataVC.swift in Sources */,
 				3D1A29E11DC6702F00295B91 /* Artwork.swift in Sources */,
+				CD94BC611DD15E41006BB26E /* LocationService.swift in Sources */,
 				3DB63EBA1DC66BD5004FB84B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
