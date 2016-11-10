@@ -50,7 +50,7 @@ class LocationService: NSObject, CLLocationManagerDelegate {
      *
      * Closure that is called when location fetching has completed.
      */
-    public var completion: ((LocationServiceResult) -> Void)?
+    internal var completion: ((LocationServiceResult) -> Void)?
     
     /**
      * fetchLocation(:completion)
