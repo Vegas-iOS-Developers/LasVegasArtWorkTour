@@ -14,11 +14,11 @@ extension CLLocation {
     static private let MetersPerMile: CLLocationDistance = 1609.344
     
     /**
-     * isMiles(from:) -> CLLocationDistance
+     * miles(from:) -> CLLocationDistance
      *
      * Easily get the distance in miles between two CLLocation's
      */
-    func isMiles(from location: CLLocation) -> CLLocationDistance {
+    func miles(from location: CLLocation) -> CLLocationDistance {
         let metersFromHere = self.distance(from: location)
         let milesFromHere = metersFromHere / CLLocation.MetersPerMile
         return milesFromHere
