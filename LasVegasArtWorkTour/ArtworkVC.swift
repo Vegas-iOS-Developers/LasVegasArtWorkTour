@@ -61,9 +61,9 @@ class ArtworkVC: UIViewController {
             //print("artType: \(artType)")
             let artURL = artRecord["path"].stringValue
             //print("artURL: \(artURL)")
-            let artGeoLocLat = artRecord["location_1"]["coordinates"][0].stringValue
+            let artGeoLocLat = artRecord["location_1"]["coordinates"][1].stringValue
             //print("artGeoLoc: \(artGeoLocLat)")
-            let artGeoLocLon = artRecord["location_1"]["coordinates"][1].stringValue
+            let artGeoLocLon = artRecord["location_1"]["coordinates"][0].stringValue
             //print("artGeoLocLon: \(artGeoLocLon)")
             
             let lat = (artGeoLocLat as NSString).doubleValue
