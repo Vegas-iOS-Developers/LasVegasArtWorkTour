@@ -34,12 +34,13 @@ struct ArtworkParser {
         let artURL = artRecord["path"].stringValue
         let artGeoLocLat = artRecord["location_1"]["coordinates"][1].stringValue
         let artGeoLocLon = artRecord["location_1"]["coordinates"][0].stringValue
+        let locationDesc = artRecord["location"].stringValue
         
         let lat = (artGeoLocLat as NSString).doubleValue
         let lon = (artGeoLocLon as NSString).doubleValue
         let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
         
-        let art = Artwork(name: artName, desc: artDesc, picURL: artURL, artist: artArtist, type: artType, coordinate: coordinate)
+        let art = Artwork(name: artName, desc: artDesc, locationDesc: locationDesc, picURL: artURL, artist: artArtist, type: artType, coordinate: coordinate)
         return art
     }
     

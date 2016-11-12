@@ -14,6 +14,7 @@ class Artwork: NSObject, MKAnnotation {
     private var _coordinate: CLLocationCoordinate2D
     private var _name: String
     private var _desc: String
+    private var _locationDesc: String
     private var _picURL: String
     private var _artist: String
     private var _type: String
@@ -24,6 +25,10 @@ class Artwork: NSObject, MKAnnotation {
     
     var desc: String {
         return _desc
+    }
+    
+    var locationDesc: String {
+        return _locationDesc
     }
     
     var picURL: String {
@@ -50,9 +55,10 @@ class Artwork: NSObject, MKAnnotation {
         return _artist
     }
     
-    init(name: String, desc: String, picURL:String, artist: String, type: String, coordinate: CLLocationCoordinate2D) {
+    init(name: String, desc: String, locationDesc: String, picURL:String, artist: String, type: String, coordinate: CLLocationCoordinate2D) {
         self._name = name
         self._desc = desc
+        self._locationDesc = locationDesc
         self._picURL = picURL
         self._artist = artist
         self._type = type
