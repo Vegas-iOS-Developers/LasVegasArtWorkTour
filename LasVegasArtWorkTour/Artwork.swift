@@ -64,5 +64,11 @@ class Artwork: NSObject, MKAnnotation {
         self._type = type
         self._coordinate = coordinate
     }
+    
+    // For print() statements
+    override var description: String {
+        return "\n\tname: \(self.name)\n\tdesc: \(self.desc)\n\tlocationDesc: \(self.locationDesc)\n\tpicURL: \(self.picURL)\n\tartist: \(self.artist)\n\ttype: \(self.type)\n\tcoordinate: \(self.coordinate)\n\ttitle: \(self.title)\n\tsubtitle: \(self.subtitle)\n"
+    }
+    
 }
 

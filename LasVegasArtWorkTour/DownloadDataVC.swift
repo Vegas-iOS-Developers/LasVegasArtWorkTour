@@ -47,7 +47,7 @@ class DownloadDataVC: UIViewController {
         let response = dataservice.response
         self.artworks = ArtworkParser.parse(response)
         
-        print("self.artworks.count: \(self.artworks.count)")
+        print("self.artworks.count: \(self.artworks)")
 //        performSegueWithIdentifier("ShowArtworkMap", sender: self.artworks)
     }
     
