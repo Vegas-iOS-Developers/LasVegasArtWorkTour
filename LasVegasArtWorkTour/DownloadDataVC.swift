@@ -45,43 +45,9 @@ class DownloadDataVC: UIViewController {
         print("TestVC.loadArtData()")
         
         let response = dataservice.response
+        self.artworks = ArtworkParser.parse(response)
         
-        print("************************************")
-        //print("response: \(response)")
-        print("************************************")
-        
-        //let json = JSON(response)
-        let json = JSON.parse(response)
-        print("json.count: \(json.count)")
-        
-        for (_,artRecord):(String, JSON) in json {
-            //print("\(artRecord)")
-            
-            let artName = artRecord["name"].stringValue
-            //print("artName: \(artName)")
-            let artDesc = artRecord["description"].stringValue
-            //print("artDesc: \(artDesc)")
-            let artArtist = artRecord["artist"].stringValue
-            //print("artArtist: \(artArtist)")
-            let artType = artRecord["type"].stringValue
-            //print("artType: \(artType)")
-            let artURL = artRecord["path"].stringValue
-            //print("artURL: \(artURL)")
-            let artGeoLocLat = artRecord["location_1"]["coordinates"][1].stringValue
-            //print("artGeoLoc: \(artGeoLocLat)")
-            let artGeoLocLon = artRecord["location_1"]["coordinates"][0].stringValue
-            //print("artGeoLocLon: \(artGeoLocLon)")
-            
-            let lat = (artGeoLocLat as NSString).doubleValue
-            let lon = (artGeoLocLon as NSString).doubleValue
-            let coordinate = CLLocationCoordinate2D(latitude: lat, longitude: lon)
-            
-            let art = Artwork(name: artName, desc: artDesc, picURL: artURL, artist: artArtist, type: artType, coordinate: coordinate)
-            
-            self.artworks.append(art)
-        }
-        
-//        print("self.artworks.count: \(self.artworks.count)")
+        print("self.artworks.count: \(self.artworks.count)")
 //        performSegueWithIdentifier("ShowArtworkMap", sender: self.artworks)
     }
     
