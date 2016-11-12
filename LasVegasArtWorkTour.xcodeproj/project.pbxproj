@@ -9,14 +9,19 @@
 /* Begin PBXBuildFile section */
 		3D1A29DF1DC66C9300295B91 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A29DE1DC66C9300295B91 /* DataService.swift */; };
 		3D1A29E11DC6702F00295B91 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A29E01DC6702F00295B91 /* Artwork.swift */; };
-		3D1A29E31DC672F100295B91 /* ArtworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1A29E21DC672F100295B91 /* ArtworkVC.swift */; };
 		3DB63EBA1DC66BD5004FB84B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB63EB91DC66BD5004FB84B /* AppDelegate.swift */; };
-		3DB63EBC1DC66BD5004FB84B /* DownloadDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB63EBB1DC66BD5004FB84B /* DownloadDataVC.swift */; };
 		3DB63EBF1DC66BD5004FB84B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EBD1DC66BD5004FB84B /* Main.storyboard */; };
 		3DB63EC11DC66BD5004FB84B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EC01DC66BD5004FB84B /* Assets.xcassets */; };
 		3DB63EC41DC66BD5004FB84B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */; };
 		A57F67C6D765BAEE6695C5EC /* Pods_LasVegasArtWorkTour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */; };
 		CD0462361DD6A8C700C4DCAA /* ArtworkParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0462351DD6A8C700C4DCAA /* ArtworkParser.swift */; };
+		CD5AB4B31DD77171009C94C6 /* ArtworkListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4B21DD77171009C94C6 /* ArtworkListViewController.swift */; };
+		CD5AB4B51DD77195009C94C6 /* ArtworkMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4B41DD77195009C94C6 /* ArtworkMapViewController.swift */; };
+		CD5AB4B71DD771FC009C94C6 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4B61DD771FC009C94C6 /* InfoViewController.swift */; };
+		CD5AB4B91DD77781009C94C6 /* ArtworkFavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4B81DD77781009C94C6 /* ArtworkFavoritesViewController.swift */; };
+		CD5AB4BB1DD7819B009C94C6 /* ArtworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4BA1DD7819B009C94C6 /* ArtworkCell.swift */; };
+		CD5AB4BF1DD78B99009C94C6 /* DismissSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4BE1DD78B99009C94C6 /* DismissSegue.swift */; };
+		CD5AB4C41DD790D0009C94C6 /* ArtworkDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5AB4C31DD790D0009C94C6 /* ArtworkDetailViewController.swift */; };
 		CD94BC611DD15E41006BB26E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD94BC601DD15E41006BB26E /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,10 +29,8 @@
 		23147618204689B0D214FD35 /* Pods-LasVegasArtWorkTour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LasVegasArtWorkTour.release.xcconfig"; path = "Pods/Target Support Files/Pods-LasVegasArtWorkTour/Pods-LasVegasArtWorkTour.release.xcconfig"; sourceTree = "<group>"; };
 		3D1A29DE1DC66C9300295B91 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3D1A29E01DC6702F00295B91 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
-		3D1A29E21DC672F100295B91 /* ArtworkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkVC.swift; sourceTree = "<group>"; };
 		3DB63EB61DC66BD4004FB84B /* LasVegasArtWorkTour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LasVegasArtWorkTour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DB63EB91DC66BD5004FB84B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DB63EBB1DC66BD5004FB84B /* DownloadDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadDataVC.swift; sourceTree = "<group>"; };
 		3DB63EBE1DC66BD5004FB84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DB63EC01DC66BD5004FB84B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DB63EC31DC66BD5004FB84B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +38,13 @@
 		977C5007916D1AE5284CF80F /* Pods-LasVegasArtWorkTour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LasVegasArtWorkTour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LasVegasArtWorkTour/Pods-LasVegasArtWorkTour.debug.xcconfig"; sourceTree = "<group>"; };
 		B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LasVegasArtWorkTour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD0462351DD6A8C700C4DCAA /* ArtworkParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkParser.swift; sourceTree = "<group>"; };
+		CD5AB4B21DD77171009C94C6 /* ArtworkListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkListViewController.swift; sourceTree = "<group>"; };
+		CD5AB4B41DD77195009C94C6 /* ArtworkMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkMapViewController.swift; sourceTree = "<group>"; };
+		CD5AB4B61DD771FC009C94C6 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		CD5AB4B81DD77781009C94C6 /* ArtworkFavoritesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkFavoritesViewController.swift; sourceTree = "<group>"; };
+		CD5AB4BA1DD7819B009C94C6 /* ArtworkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkCell.swift; sourceTree = "<group>"; };
+		CD5AB4BE1DD78B99009C94C6 /* DismissSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissSegue.swift; sourceTree = "<group>"; };
+		CD5AB4C31DD790D0009C94C6 /* ArtworkDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtworkDetailViewController.swift; sourceTree = "<group>"; };
 		CD94BC601DD15E41006BB26E /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,15 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				3DB63EB91DC66BD5004FB84B /* AppDelegate.swift */,
-				3DB63EBB1DC66BD5004FB84B /* DownloadDataVC.swift */,
-				3D1A29E21DC672F100295B91 /* ArtworkVC.swift */,
-				3D1A29E01DC6702F00295B91 /* Artwork.swift */,
-				CD0462351DD6A8C700C4DCAA /* ArtworkParser.swift */,
-				3D1A29DE1DC66C9300295B91 /* DataService.swift */,
-				CD94BC601DD15E41006BB26E /* LocationService.swift */,
-				3DB63EBD1DC66BD5004FB84B /* Main.storyboard */,
-				3DB63EC01DC66BD5004FB84B /* Assets.xcassets */,
-				3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */,
+				CD5AB4B11DD77109009C94C6 /* Data Layer */,
+				CD5AB4B01DD770C7009C94C6 /* Other Services */,
+				CD5AB4AC1DD7707F009C94C6 /* Frontend */,
 				3DB63EC51DC66BD5004FB84B /* Info.plist */,
 			);
 			path = LasVegasArtWorkTour;
@@ -101,6 +105,49 @@
 				B5A87B831883757D55EC6A9E /* Pods_LasVegasArtWorkTour.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD5AB4AC1DD7707F009C94C6 /* Frontend */ = {
+			isa = PBXGroup;
+			children = (
+				CD5AB4C21DD78D1B009C94C6 /* Common */,
+				3DB63EBD1DC66BD5004FB84B /* Main.storyboard */,
+				CD5AB4BA1DD7819B009C94C6 /* ArtworkCell.swift */,
+				CD5AB4B21DD77171009C94C6 /* ArtworkListViewController.swift */,
+				CD5AB4B81DD77781009C94C6 /* ArtworkFavoritesViewController.swift */,
+				CD5AB4C31DD790D0009C94C6 /* ArtworkDetailViewController.swift */,
+				CD5AB4B61DD771FC009C94C6 /* InfoViewController.swift */,
+				CD5AB4B41DD77195009C94C6 /* ArtworkMapViewController.swift */,
+				3DB63EC21DC66BD5004FB84B /* LaunchScreen.storyboard */,
+				3DB63EC01DC66BD5004FB84B /* Assets.xcassets */,
+			);
+			name = Frontend;
+			sourceTree = "<group>";
+		};
+		CD5AB4B01DD770C7009C94C6 /* Other Services */ = {
+			isa = PBXGroup;
+			children = (
+				CD94BC601DD15E41006BB26E /* LocationService.swift */,
+			);
+			name = "Other Services";
+			sourceTree = "<group>";
+		};
+		CD5AB4B11DD77109009C94C6 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				3D1A29E01DC6702F00295B91 /* Artwork.swift */,
+				CD0462351DD6A8C700C4DCAA /* ArtworkParser.swift */,
+				3D1A29DE1DC66C9300295B91 /* DataService.swift */,
+			);
+			name = "Data Layer";
+			sourceTree = "<group>";
+		};
+		CD5AB4C21DD78D1B009C94C6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD5AB4BE1DD78B99009C94C6 /* DismissSegue.swift */,
+			);
+			name = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,13 +273,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5AB4B91DD77781009C94C6 /* ArtworkFavoritesViewController.swift in Sources */,
+				CD5AB4BF1DD78B99009C94C6 /* DismissSegue.swift in Sources */,
 				3D1A29DF1DC66C9300295B91 /* DataService.swift in Sources */,
+				CD5AB4B51DD77195009C94C6 /* ArtworkMapViewController.swift in Sources */,
 				CD0462361DD6A8C700C4DCAA /* ArtworkParser.swift in Sources */,
-				3D1A29E31DC672F100295B91 /* ArtworkVC.swift in Sources */,
-				3DB63EBC1DC66BD5004FB84B /* DownloadDataVC.swift in Sources */,
+				CD5AB4B71DD771FC009C94C6 /* InfoViewController.swift in Sources */,
 				3D1A29E11DC6702F00295B91 /* Artwork.swift in Sources */,
 				CD94BC611DD15E41006BB26E /* LocationService.swift in Sources */,
+				CD5AB4C41DD790D0009C94C6 /* ArtworkDetailViewController.swift in Sources */,
 				3DB63EBA1DC66BD5004FB84B /* AppDelegate.swift in Sources */,
+				CD5AB4BB1DD7819B009C94C6 /* ArtworkCell.swift in Sources */,
+				CD5AB4B31DD77171009C94C6 /* ArtworkListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
