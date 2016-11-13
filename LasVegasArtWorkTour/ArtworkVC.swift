@@ -30,28 +30,27 @@ class ArtworkVC: UIViewController {
     }
     
     func callDataService() {
-        print("TestVC.callDataService()")
         let url = "https://opendata.lasvegasnevada.gov/resource/nefs-tayh.json"
-        dataservice = DataService(url: url)
-        print("TestVC.viewDidLoad(): dataservice = DataService(url: url)")
-        dataservice.downloadDetails { () -> () in
-            //this will be called after download is done
-            print("TestVC.viewDidLoad(): calling loadArtData2()")
-            self.loadArtData()
+        dataservice = DataService()
+        dataservice.download(from: url) { response in
+            switch response {
+            case .success(let value):
+                self.loadArt(data: value)
+            case .failure(let error):
+                print(error)
+            }
         }
     }
     
-    func loadArtData() {
+    func loadArt(data: [[String: Any]]) {
         print("TestVC.loadArtData()")
         
-        let response = dataservice.response
+        self.artworks = ArtworkParser.parse(data)
+        print("self.artworks.count: \(self.artworks)")
         
-        self.artworks = ArtworkParser.parse(response)
-
-        print("self.artworks.count: \(self.artworks.count)")
         performSegue(withIdentifier: "ShowArtworkMap", sender: self.artworks)
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 
         print("TestVC.prepareForSegue()")
