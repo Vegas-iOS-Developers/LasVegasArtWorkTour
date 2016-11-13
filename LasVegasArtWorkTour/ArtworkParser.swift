@@ -12,13 +12,13 @@ import CoreLocation
 
 struct ArtworkParser {
     
-    static internal func parse(_ data: String) -> [Artwork] {
+    static internal func parse(_ data: [[String: Any]]) -> [Artwork] {
         let parser = ArtworkParser()
         return parser.parseCollection(data)
     }
     
-    internal func parseCollection(_ data: String) -> [Artwork] {
-        let json = JSON.parse(data)
+    internal func parseCollection(_ data: [[String: Any]]) -> [Artwork] {
+        let json = JSON(data)
         var artworks = [Artwork]()
         for (_, artRecord):(String, JSON) in json {
             artworks.append(self.parseArtwork(artRecord))
