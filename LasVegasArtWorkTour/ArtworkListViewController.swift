@@ -31,6 +31,7 @@ class ArtworkListViewController: UIViewController, UITableViewDelegate, UITableV
             switch response {
             case .success(let value):
                 self.artworks = ArtworkParser.parse(value)
+                self.tableView?.reloadData()
             case .failure(let error):
                 print(error)
                 
